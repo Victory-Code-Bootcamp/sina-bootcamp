@@ -1,0 +1,11 @@
+a {
+    color: blueviolet;
+}
+
+a:hover {
+    color: blue;
+}
+
+a:active {
+    color: yellowgreen;
+}
