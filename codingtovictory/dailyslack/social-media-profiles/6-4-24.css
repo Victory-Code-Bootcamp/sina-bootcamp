@@ -1,8 +1,11 @@
 body {
-    font-family: Arial, sans-serif;
+    background-color: aqua;
+    font-family: cursive, serif;
+    text-align: center;
 }
 .profile {
-    border: 1px solid #ccc;
+    background-color: aqua;
+    display: flexbox;S
     padding: 20px;
     margin: 20px;
     text-align: center;
@@ -14,11 +17,31 @@ body {
 }
 .profile h2 {
     margin: 10px 0;
+    text-align: center;
 }
 .profile p {
     margin: 5px 0;
+    text-align: center;
 }
 .social-links a {
+    box-shadow: none;
+    display: block;
+    text-align: center;
+    display: column;
     margin: 0 10px;
     text-decoration: none;
+    
+}
+
+.porfile {
+    display: columb;
+    background-color: purple;
+  }
+  
+  .profile > div {
+    background-color: aqua;
+    display:colum;
+    margin: 10px;
+    padding: 20px;
+    font-size: 30px;
 }
