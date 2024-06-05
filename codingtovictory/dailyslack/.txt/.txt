@@ -1,0 +1,50 @@
+Git Rebase:
+What is the purpose of the git rebase command?
+The primary purpose of the git rebase command is to integrate changes from one branch into another. Maintain a clean project history. Synchronize with upstream changes. Resolve with upstream changes. resolve conflicts before merging. Streamline the integration of changes.
+
+How does it differ from git merge?
+git rebase and git merge are both used to integrate changes from one branch into another, but they do so in fundamentally different ways, each with its own implications on the project's commit history.
+Rewriting history, Linear history, cleaner commit history, conflict resolution.
+
+Describe a scenario where git rebase might be more beneficial than git merge.
+Imagine a scenario where a development team is working on a large project with multiple features being developed concurrently. The team follows a workflow where each developer creates a feature branch off the main branch (e.g., main). One specific feature, feature-x, is being developed by Alice. Meanwhile, other developers are also making significant changes to the main branch. Alice's feature branch is based on an earlier state of the main branch. Throughout the development process, Alice needs to keep her feature branch up-to-date with the latest changes in the main branch to ensure compatibility and to avoid massive conflicts when finally merging. Using git rebase in this scenario helps maintain a clean, linear history that is easier to follow and review. It reduces the clutter caused by multiple merge commits and simplifies the final integration of the feature branch into the main branch. This approach is especially beneficial in collaborative environments with frequent updates to the main branch.
+
+Git Cherry-pick:
+What does the git cherry-pick command do?
+The git cherry-pick command is used to apply the changes introduced by one or more existing commits from one branch into the current branch.
+
+Provide an example of when you might use git cherry-pick.
+This command is particularly useful when you need to apply specific bug fixes or features from one branch to another without merging the entire branch history.
+
+Git Bisect:
+Explain the git bisect command and its use case.
+'git bisect' is a powerful Git command used for finding the exact commit that introduced a bug or caused an issue in a codebase. It employs a binary search algorithm, which efficiently narrows down the problematic commit by systematically testing commits between a known good state and a known bad state
+
+How can git bisect help in debugging a codebase?
+The process involves repeatedly dividing the range of commits in half and testing whether the bug is present in the midpoint commit, continuing until the specific commit that introduced the issue is identified.
+
+Git Reflog:
+What is git reflog and how can it be used?
+Git Reflog (reference log) is a mechanism that records updates to the tips of branches and other references in a Git repository. It keeps a history of all the changes made to the references (such as branch heads, commits, and other refs) in your local repository. This includes not just the commits but also actions like checkouts, resets, rebases, and merges.
+
+Describe a situation where git reflog would be particularly useful.
+Reflog is particularly useful for recovering lost commits, branches, and understanding the recent history of your repository's state.
+
+Git Reset:
+Explain the differences between git reset --soft, git reset --mixed, and git reset --hard.
+--soft resets the current branch's pointer to the specified commit and leaves the staging area and working directory unchanged. The changes from the commits that are reset are staged for commit.
+--mixed is the default mode for git reset. It resets the current branch's pointer to the specified commit and updates the staging area to match the commit, but it leaves the working directory unchanged. This means the changes from the commits that are reset are not staged but remain in the working directory as unstaged changes.
+Use --mixed when you want to undo a commit and remove the changes from the staging area but keep the changes in the working directory. This is useful if you want to edit the changes before recommitting them.
+
+When would you use each option?
+Use --soft when you want to undo a commit but keep the changes staged for a new commit.
+Use --mixed when you want to undo a commit and remove the changes from the staging area but keep the changes in the working directory.
+Use --hard when you want to completely discard changes in the commits being reset, including any changes in the working directory. 
+
+Git Blame:
+What does the git blame command do?
+The git blame command is a useful tool in Git that annotates each line of a file with information about the last commit that modified that line. This information typically includes the commit hash, author, and the time of the change. Essentially, git blame allows you to track who made specific changes to a file and when those changes were made.
+
+How can git blame be useful in understanding the history of a file?
+When you run git blame on a file, Git provides an annotated output showing each line of the file along with. The commit hash of the most recent commit that modified the line.The author who made the change.
+The timestamp of when the change was made. Optionally, additional details like the commit message.
