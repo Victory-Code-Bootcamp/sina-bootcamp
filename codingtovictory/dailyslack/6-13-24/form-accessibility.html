@@ -1,0 +1,31 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daily challenge 6-13-24
+
+    </title>
+</head>
+<body>
+    <h1>Donate Here</h1>
+    <p>Thank you for your support and consideration</p>
+
+    <!-- The form action URL is provided by PayPal -->
+    <form action="https://www.paypal.com/donate" method="post" target="_top">
+        <!-- The business field contains your PayPal email address or merchant ID -->
+        <input type="hidden" name="business" value="YOUR_PAYPAL_EMAIL_OR_MERCHANT_ID">
+        <!-- The cmd field specifies the type of button, in this case, a donation button -->
+        <input type="hidden" name="cmd" value="_donations">
+        <!-- The item_name field specifies what the donation is for -->
+        <input type="hidden" name="item_name" value="Support Our Cause">
+        <!-- Currency code -->
+        <input type="hidden" name="currency_code" value="USD">
+        <!-- Donation button -->
+        <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif" border="0" name="submit" alt="Donate with PayPal button">
+        <img alt="" border="0" src="https://www.paypal.com/en_US/i/scr/pixel.gif" width="1" height="1">
+    </form>
+
+
+
+</body>
+</html>
