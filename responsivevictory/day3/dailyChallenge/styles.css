@@ -1,0 +1,17 @@
+
+.header {
+    background-color: yellow; 
+
+
+@media (max-width: 768px) {
+    .header {
+        background-color: blue;
+    }
+}
+
+
+@media (max-width: 480px) {
+    .header {
+        background-color: red;
+    }
+}
