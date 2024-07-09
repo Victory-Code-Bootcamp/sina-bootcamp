@@ -1,0 +1,15 @@
+/* base.css */
+:root {
+    --primary-color: #3498db;
+    --secondary-color: #2ec71;
+    --font-size: 16px;
+    --marin: 10px;
+    --border-radius: 5px;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    font-size:  var(--primary-color);
+    margin: 0;
+    padding: 0;
+}
