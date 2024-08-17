@@ -73,19 +73,19 @@
 
 // Challenge 8: Destructuring Function Parameters
 // Create a function that accepts an object as a parameter and uses destructuring to extract specific properties.
-const user = {
-    name: "Sina",
-    age: 44,
-    address: {
-      city: "Seattle",
-      country: "USA"
-    }
-  };
+// const user = {
+//     name: "Sina",
+//     age: 44,
+//     address: {
+//       city: "Seattle",
+//       country: "USA"
+//     }
+//   };
   
-  function displayInfo({ name, age, address: { city, country } }) {
-    console.log(`${name} is ${age} years old and lives in ${city}, ${country}.`);
-  }
+//   function displayInfo({ name, age, address: { city, country } }) {
+//     console.log(`${name} is ${age} years old and lives in ${city}, ${country}.`);
+//   }
   
-  displayInfo(user);
+//   displayInfo(user);
   
   
